@@ -7,12 +7,30 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const sampleLayoutData = {
   storeName: "Store 001",
+  aisles: [
+    {
+      id: "aisle-1",
+      number: 1,
+      posX: 1,
+      posY: 1,
+      width: 6,
+      height: 1,
+    },
+    {
+      id: "aisle-2",
+      number: 2,
+      posX: 2,
+      posY: 2,
+      width: 6,
+      height: 1,
+    },
+  ],
   sections: [
     {
       id: "frozen-section",
       name: "Frozen",
-      posX: 6,
-      posY: 1,
+      posX: 15,
+      posY: 0,
       cells: [
         {
           product: "Shelf 1",
@@ -43,8 +61,8 @@ const sampleLayoutData = {
     {
       id: "sweet-section",
       name: "Sweets",
-      posX: 1,
-      posY: 1,
+      posX: 0,
+      posY: 0,
       cells: [
         {
           product: "Shelf 1",
@@ -74,7 +92,6 @@ const sampleLayoutData = {
     },
   ],
 };
-
 
 
 function App() {
