@@ -19,7 +19,7 @@ const sampleLayoutData = {
     {
       id: "aisle-2",
       number: 2,
-      posX: 2,
+      posX: 1,
       posY: 2,
       width: 6,
       height: 1,
