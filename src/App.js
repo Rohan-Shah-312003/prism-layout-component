@@ -7,7 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const sampleLayoutData = {
   storeName: "Store 001",
-  aisles: [
+  sections: [
+
     {
       id: "aisle-1",
       number: 1,
@@ -20,12 +21,10 @@ const sampleLayoutData = {
       id: "aisle-2",
       number: 2,
       posX: 1,
-      posY: 2,
+      posY: 3,
       width: 6,
       height: 1,
     },
-  ],
-  sections: [
     {
       id: "frozen-section",
       name: "Frozen",
