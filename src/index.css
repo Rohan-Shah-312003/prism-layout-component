@@ -1,0 +1,18 @@
+/* StoreLayout.css */
+.modal-backdrop {
+  opacity: 0.5;
+}
+
+.tooltip {
+  pointer-events: none;
+}
+
+/* Ensure dark theme consistency */
+body {
+  background-color: #212529;
+}
+
+.modal-content {
+  background-color: #343a40;
+  color: #f8f9fa;
+}

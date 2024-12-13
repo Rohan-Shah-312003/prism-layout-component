@@ -1,34 +1,43 @@
-import './App.css';
-import StoreLayout from './components/StoreLayout';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import "./App.css";
+import StoreLayout from "./components/StoreLayout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // will be available from the API
 
 const sampleLayoutData = {
   storeName: "Store 001",
   sections: [
-
+    {
+      id: "trolly-bay",
+      width: 10,
+      type: "trolly-bay",
+      height: 6,
+      posX: 0,
+      posY: 0,
+    },
     {
       id: "aisle-1",
+      type: "aisle",
       number: 1,
       posX: 1,
-      posY: 1,
+      posY: 2,
       width: 6,
       height: 1,
     },
     {
       id: "aisle-2",
+      type: "aisle",
       number: 2,
       posX: 1,
       posY: 3,
       width: 6,
-      height: 1,
+      height: 5,
     },
     {
       id: "frozen-section",
       name: "Frozen",
-      posX: 15,
+      type: "section",
+      posX: 9,
       posY: 0,
       cells: [
         {
@@ -60,8 +69,9 @@ const sampleLayoutData = {
     {
       id: "sweet-section",
       name: "Sweets",
-      posX: 0,
-      posY: 0,
+      type: "section",
+      posX: 8,
+      posY: 4,
       cells: [
         {
           product: "Shelf 1",
@@ -91,7 +101,6 @@ const sampleLayoutData = {
     },
   ],
 };
-
 
 function App() {
   return (
